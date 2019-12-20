@@ -18,20 +18,20 @@ const NewGame = ({
           type="easy"
           onClick={() => onLevelSelect('easy')}
         >
-      <h1> 36 Cards (18 pairs) Easy</h1>
+      <h1> 36 Cards (18 pairs to match) Easy</h1>
         </LevelLink>
         <LevelLink
           type="medium"
           onClick={() => onLevelSelect('medium')}
         >
-        <h1>  48 Cards (24 Pairs) Medium</h1>
+        <h1>  48 Cards (24 Pairs to match) Medium</h1>
         </LevelLink>
       <br></br>
         <LevelLink
           type="hard"
           onClick={() => onLevelSelect('hard')}
         >
-       <h1>  60 cards (30 pairs) Hard</h1>
+       <h1>  60 cards (30 pairs to match) Hard</h1>
         </LevelLink>
       <br></br>
   </div>
