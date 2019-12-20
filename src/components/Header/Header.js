@@ -18,6 +18,9 @@ const Header = ({ className }) => (
     <NavLink to="/menu" className="backToMenuLink">
       Back to main menu
     </NavLink>
+    <NavLink to="/new-game" className="backToMenuLink">
+      Reset Game
+    </NavLink>
   </header>
 )
 

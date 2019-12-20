@@ -6,7 +6,7 @@ import {
   shuffle
 } from 'lodash'
 
-import { getLevelCards } from '../../utils/setLevel'
+import { getLevelCards } from '../../utils/setLevel';
 import {
   loadGame,
   loadSettings,
@@ -35,7 +35,6 @@ class CardsConnected extends Component {
     const cards = getLevelCards(selectedLevel)
     const cardStates = []
     const duplicatedCards = shuffle([...cards, ...cards])
-
     for (let i=0; i<duplicatedCards.length; i++) {
       cardStates.push({
         id: `${duplicatedCards[i]}-${random(0,999)}`,
@@ -45,6 +44,8 @@ class CardsConnected extends Component {
     }
 
     return cardStates
+
+    console.log('cardStates')
   }
 
   getCardIndex(id) {
@@ -58,7 +59,9 @@ class CardsConnected extends Component {
     cardAttempts.push({
       id,
       name
-    })
+    });
+
+    console.log('>>>>>>>>>>CardAttempts>>>>>>>>>>>>>>>', cardAttempts);
 
     this.setState({
       cardAttempts,
@@ -95,6 +98,8 @@ class CardsConnected extends Component {
       return !card.show
     })
 
+    console.log('>>>>>>hiddenCards', hiddenCards);
+
     return !hiddenCards
   }
 
@@ -122,6 +127,8 @@ class CardsConnected extends Component {
 
   saveGameState() {
     saveGame(this.state)
+
+    console.log('>>>>>>>>>>>State of the Game>>>>>>>>>>>>', this.state)
   }
 
   endGame() {
@@ -146,13 +153,14 @@ class CardsConnected extends Component {
       this.endGame()
     }
 
-    this.saveGameState()
+    this.saveGameState();
   }
 
   render() {
     return this.state.gameFinished
       ? <Redirect to="/end-game" />
-      : <Cards
+      :
+ <Cards
           cards={this.state.cards}
           onClick={this.handleCardClick}
         />

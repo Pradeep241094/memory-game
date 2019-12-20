@@ -7,11 +7,11 @@ import {
 } from '../../components'
 
 const Cards = ({ cards, className, onClick }) => {
-  const chunkedCards = chunk(cards, 10)
+  const chunkedCards = chunk(cards, 6)
 
   return (
     <div className={className}>
-      <Header />
+      <Header/>
 
       <div className="Cards__content">
         {chunkedCards.map((cards, index) =>

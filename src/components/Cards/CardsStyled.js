@@ -5,6 +5,7 @@ import Cards from './Cards.js'
 const CardsStyled = styled(Cards)`
   width: 100%;
   display: flex;
+  background-image: linear-gradient(to bottom, #1B2632, #B2DCEF);
   flex-direction: column;
   align-items: center;
   

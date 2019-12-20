@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 import { colors } from '../../styles/variables'
-import NewGame from './NewGame.js'
+import NewGame from './NewGame.js';
 
 const NewGameStyled = styled(NewGame)`
   .NewGame__title {
     text-align: center;
     font-weight: 300;
     font-size: 40px;
-    color: ${colors.white};
+    color: ${colors.nightBlue};
   }
 
   .NewGame__link {
@@ -18,7 +18,7 @@ const NewGameStyled = styled(NewGame)`
     align-items: center;
     text-decoration: none;
     font-size: 20px;
-    color: ${colors.white};
+    color: ${colors.nightBlue};
     cursor: pointer;
     transition: opacity .3s ease-in-out;
     

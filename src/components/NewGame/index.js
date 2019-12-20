@@ -1,1 +1,1 @@
-export { default } from './NewGameConnected.js'
+export { default } from './CreateNewGame.js'

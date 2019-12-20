@@ -9,11 +9,10 @@ const HeaderStyled = styled(Header)`
   right: 0;
   width: 100%;
   padding: 0 20px;
-  background-color: #000;
+  background-color: #1B2632;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #111;
   color: #fff;
   z-index: 10;
   box-shadow: 0 0 3px #000;

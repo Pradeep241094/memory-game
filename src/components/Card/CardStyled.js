@@ -8,9 +8,9 @@ import Card from './Card.js'
 
 const CardStyled = styled(Card)`
   width: 90px;
-  height: 130px;
+  height: 80px;
   position: relative;
-  perspective: 360px;
+  perspective: 200px;
   margin-bottom: 10px;
 
   .Card__element {
@@ -19,14 +19,14 @@ const CardStyled = styled(Card)`
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: opacity .2s ${transitions.bezier},
-                transform 1.5s ${transitions.bezier};
+    transition: opacity .2s ${transitions.nightBlue},
+                transform 1.5s ${transitions.nightBlue};
     cursor: ${props => props.show ? 'default' : 'pointer'};
     user-select: none;
 
     ${props => !props.show &&
       `&:hover {
-        opacity: .6
+        opacity: .9
       }`
     };
     
@@ -56,7 +56,7 @@ const CardStyled = styled(Card)`
   }
   
   .Card__contents--back {
-    color: ${colors.gray};
+    color: ${colors.nightBlue};
     font-size: 50px;
   }
 `

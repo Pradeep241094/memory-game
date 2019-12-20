@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
 import { clearGame } from '../../utils/gameState.js'
-import setLevel from '../../utils/setLevel.js'
+// import setLevel from '../../utils/setLevel.js'
 
 import NewGame from './NewGameStyled';
 
-class NewGameConnected extends Component {
+class CreateNewGame extends Component {
   constructor(props) {
     super(props)
 
@@ -19,9 +19,6 @@ class NewGameConnected extends Component {
 
   handleLevelSelect(level) {
     clearGame()
-
-    setLevel(level)
-
     this.setState({
       redirectToGame: true
     })
@@ -34,4 +31,4 @@ class NewGameConnected extends Component {
   }
 }
 
-export default NewGameConnected
+export default CreateNewGame

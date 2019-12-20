@@ -8,22 +8,20 @@ const setup = () => {
     store.set(appName, {
       settings: {},
       state: null
-    })
+    });
   }
 }
 
 const saveGame = (state) => {
   setup()
-
   const currentState = store.get(appName)
   const newState = {...currentState, state}
-
+console.log('>>>>>>>>>>>newState>>>>>>>>>>>>>>>>>>>>', newState);
   store.set(appName, newState)
 }
 
 const loadGame = () => {
   setup()
-
   return store.get(appName).state
 }
 
@@ -38,7 +36,6 @@ const clearGame = () => {
 
 const saveSettings = (settings) => {
   setup()
-
   const currentSettings = store.get(appName)
   const newSettings = {...currentSettings, settings}
 
