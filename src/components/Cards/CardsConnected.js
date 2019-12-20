@@ -31,8 +31,8 @@ class CardsConnected extends Component {
   }
 
   static getCardStates() {
-    const selectedLevel = loadSettings('level')
-    const cards = getLevelCards(selectedLevel)
+    const selectedLevel = loadSettings('level');
+    const cards = getLevelCards(selectedLevel);
     const cardStates = []
     const duplicatedCards = shuffle([...cards, ...cards])
     for (let i=0; i<duplicatedCards.length; i++) {
@@ -44,8 +44,6 @@ class CardsConnected extends Component {
     }
 
     return cardStates
-
-    console.log('cardStates')
   }
 
   getCardIndex(id) {
@@ -61,7 +59,6 @@ class CardsConnected extends Component {
       name
     });
 
-    console.log('>>>>>>>>>>CardAttempts>>>>>>>>>>>>>>>', cardAttempts);
 
     this.setState({
       cardAttempts,
@@ -70,9 +67,8 @@ class CardsConnected extends Component {
   }
 
   compareCardAttempts() {
-    const attempts = this.state.cardAttempts
-
-    return attempts[0].name === attempts[1].name
+    const attempts = this.state.cardAttempts;
+    return attempts[0].name === attempts[1].name;
   }
 
   clearPreviousCardAttempts() {
@@ -97,7 +93,6 @@ class CardsConnected extends Component {
     const hiddenCards = this.state.cards.some(card => {
       return !card.show
     })
-
     console.log('>>>>>>hiddenCards', hiddenCards);
 
     return !hiddenCards
@@ -117,6 +112,8 @@ class CardsConnected extends Component {
   hideCard(id) {
     const cardIndex = this.getCardIndex(id)
 
+    console.log('>>>>>>>>>>>>>>>>>>>>CardIndex', cardIndex);
+    
     const cards = [...this.state.cards]
     cards[cardIndex].show = false
 
@@ -127,8 +124,6 @@ class CardsConnected extends Component {
 
   saveGameState() {
     saveGame(this.state)
-
-    console.log('>>>>>>>>>>>State of the Game>>>>>>>>>>>>', this.state)
   }
 
   endGame() {

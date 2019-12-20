@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
 import { clearGame } from '../../utils/gameState.js'
-// import setLevel from '../../utils/setLevel.js'
+import setLevel from '../../utils/setLevel.js'
 
 import NewGame from './NewGameStyled';
 
@@ -18,9 +18,10 @@ class CreateNewGame extends Component {
   }
 
   handleLevelSelect(level) {
-    clearGame()
+    clearGame();
+    setLevel(level);
     this.setState({
-      redirectToGame: true
+      redirectToGame: true,
     })
   }
 

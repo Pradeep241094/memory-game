@@ -1,2 +1,2 @@
-import './init/react.js'
+import './init/app.js'
 import './init/styles.js'

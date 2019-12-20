@@ -11,10 +11,8 @@ const Header = ({ className }) => (
         className="Header__logoImage"
         src={logo}
       />
-
       Memory game
     </div>
-
     <NavLink to="/menu" className="backToMenuLink">
       Back to main menu
     </NavLink>

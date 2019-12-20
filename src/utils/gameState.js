@@ -16,7 +16,7 @@ const saveGame = (state) => {
   setup()
   const currentState = store.get(appName)
   const newState = {...currentState, state}
-console.log('>>>>>>>>>>>newState>>>>>>>>>>>>>>>>>>>>', newState);
+  console.log('>>>>>>>>>>>newState>>>>>>>>>>>>>>>>>>>>', newState);
   store.set(appName, newState)
 }
 
@@ -27,7 +27,7 @@ const loadGame = () => {
 
 const clearGame = () => {
   setup()
-
+  console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>clear game function is called');
   const currentState = store.get(appName)
   const newState = {...currentState, state: null}
 
@@ -45,7 +45,9 @@ const saveSettings = (settings) => {
 const loadSettings = (value) => {
   setup()
 
-  const storedSettings = store.get(appName).settings
+  const storedSettings = store.get(appName).settings;
+
+  console.log('>>>>>>>>>>>>>>>>>>>>StoredSettings>>>>>>>>>>>>>>', storedSettings);
 
   return value
     ? get(store.get(appName).settings, value)

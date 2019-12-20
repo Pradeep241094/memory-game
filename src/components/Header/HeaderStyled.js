@@ -32,5 +32,4 @@ const HeaderStyled = styled(Header)`
     text-decoration: none;
   }
 `
-
 export default HeaderStyled

@@ -2,7 +2,6 @@ import React from 'react'
 
 const Card = ({ className, id, name, onClick }) => {
   const image = require(`./images/${name}.svg`)
-
   return image ? (
     <li className={className}>
       <a className="Card__element" onClick={() => onClick(id, name)}>
