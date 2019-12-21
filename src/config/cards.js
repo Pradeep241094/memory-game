@@ -1,4 +1,4 @@
-const cards = [
+const cards = [ // library of cards generated from the SVG files under Images
   'airbnb',
   'allegro',
   'amazon',

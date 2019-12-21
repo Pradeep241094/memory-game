@@ -1,16 +1,18 @@
-import React from 'react'
+import React from 'react';
 import {
   BrowserRouter,
   Redirect,
   Route
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import {
   Cards,
   EndGame,
   MainMenu,
   NewGame
-} from '../../components'
+} from '../../components';
+
+// Main layout of the Application
 
 const MainLayout = ({ className }) => (
   <BrowserRouter>

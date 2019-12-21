@@ -6,12 +6,12 @@ import {
   Header
 } from '../../components'
 
-const Cards = ({ cards, className, onClick }) => {
+const Cards = ({ cards, currentScore, className, onClick }) => {
   const chunkedCards = chunk(cards, 6); // out of the available cards, create an row with 6 cards accessed in the chunk.
-
+  
   return (
     <div className={className}>
-      <Header/>
+      <Header currentScore = {currentScore}/>
       <div className="Cards__content">
         {chunkedCards.map((cards, index) =>
           <ul key={index}>

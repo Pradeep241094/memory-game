@@ -1,7 +1,5 @@
-import styled from 'styled-components'
-
-import { colors } from '../../styles/variables.js'
-import MainLayout from './MainLayout.js'
+import styled from 'styled-components';
+import MainLayout from './MainLayout.js';
 
 const MainLayoutStyled = styled(MainLayout)`
   background-image: linear-gradient(to bottom, #1B2632, #B2DCEF);
@@ -11,4 +9,4 @@ const MainLayoutStyled = styled(MainLayout)`
   align-items: center;
   width: 100%;
 `;
-export default MainLayoutStyled
+export default MainLayoutStyled;

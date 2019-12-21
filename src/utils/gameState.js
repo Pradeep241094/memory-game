@@ -1,7 +1,7 @@
-import store from 'store'
-import { get } from 'lodash'
+import store from 'store';
+import { get } from 'lodash';
 
-const appName = 'memoryGame'
+const appName = 'memoryGame';
 
 const setup = () => {
   if (!store.get(appName)) {
@@ -10,7 +10,7 @@ const setup = () => {
       state: null
     });
   }
-}
+} // function to initialize the game.
 
 const saveGame = (state) => {
   setup()
@@ -18,21 +18,20 @@ const saveGame = (state) => {
   const newState = {...currentState, state}
   console.log('>>>>>>>>>>>newState>>>>>>>>>>>>>>>>>>>>', newState);
   store.set(appName, newState)
-}
+} // function to update the store with the newState elements.
 
 const loadGame = () => {
   setup()
   return store.get(appName).state
-}
+} // function to load the game with the initial state.
 
 const clearGame = () => {
   setup()
-  console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>clear game function is called');
   const currentState = store.get(appName)
   const newState = {...currentState, state: null}
 
   store.set(appName, newState)
-}
+} // function to reset the game
 
 const saveSettings = (settings) => {
   setup()

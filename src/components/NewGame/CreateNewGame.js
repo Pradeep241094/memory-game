@@ -17,6 +17,8 @@ class CreateNewGame extends Component {
     this.handleLevelSelect = this.handleLevelSelect.bind(this)
   }
 
+  // handle the difficulty level based on the user selection.
+  
   handleLevelSelect(level) {
     clearGame();
     setLevel(level);

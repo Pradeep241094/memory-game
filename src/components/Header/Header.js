@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 const logo = require('./images/logo.svg')
 
-const Header = ({ className }) => (
+// Header which shows the Main menu, Reset Game, 
+const Header = ({ className, currentScore }) => (
   <header className={className}>
     <div className="Header__logo">
       <img
@@ -19,6 +20,7 @@ const Header = ({ className }) => (
     <NavLink to="/new-game" className="backToMenuLink">
       Reset Game
     </NavLink>
+    <p>CurrentScore: {currentScore}</p>
   </header>
 )
 

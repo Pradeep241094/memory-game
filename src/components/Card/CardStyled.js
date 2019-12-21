@@ -6,6 +6,7 @@ import {
 } from '../../styles/variables.js'
 import Card from './Card.js'
 
+// styled components 
 const CardStyled = styled(Card)`
   width: 90px;
   height: 80px;
