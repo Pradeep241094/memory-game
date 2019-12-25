@@ -7,6 +7,7 @@ import {
 } from 'lodash'
 
 import { getLevelCards } from '../../utils/setLevel';
+import getPlayersSize from '../../utils/setPlayers';
 import {
   loadGame,
   loadSettings,
@@ -20,21 +21,27 @@ class CardsConnected extends Component {
 
     this.handleCardClick = this.handleCardClick.bind(this)
 
-    const cards = this.constructor.getCardStates()
-
+    const cards = this.constructor.getCardStates();
     this.state = loadGame() ? loadGame() : {
       cards,
       cardAttempts: [],
       cardAttemptsCount: 0,
       gameFinished: false,
       currentScore: 0,
+      clickNumber: 0,
+      chances: 2,
+      selectedPlayers: loadSettings('playerSize'),
+      playerScores: {},
+      playerSequence: 0,
     }
   }
 
-  // fetch the initial states of the cards from the library of the cards and generate pairs
+  /* fetch the initial states of the cards from the library 
+  of the cards and generate pairs */
 
   static getCardStates() {
     const selectedLevel = loadSettings('level');
+    console.log('>>>>>>>>>>>>.selectedLevel<<<<<<<<<', selectedLevel);
     const cards = getLevelCards(selectedLevel);
     const cardStates = []
     const duplicatedCards = shuffle([...cards, ...cards])
@@ -55,6 +62,13 @@ class CardsConnected extends Component {
     return this.state.cards.findIndex(card => {
       return card.id === id
     })
+  }
+
+  setPlayerSize() { //set playersize to the function
+    this.setState ({
+      selectedPlayers : loadSettings('playerSize')
+    })
+  return this.state.selectedPlayers
   }
 
   // add the cards to compare into the array and make a count of attempts.
@@ -89,14 +103,20 @@ class CardsConnected extends Component {
     })
   }
 
-  // function to verify for the right card attempts and generatescores for the correct attempts.  
+  /* function to verify for the right card attempts 
+  and generatescores for the correct attempts. */  
 
   verifyCardAttempts() {
+    const { playerScores, playerSequence, cardAttempts } = this.state;
     if (!this.compareCardAttempts()) {
-      this.hideCard(this.state.cardAttempts[0].id)
-      this.hideCard(this.state.cardAttempts[1].id)
+      this.hideCard(cardAttempts[0].id)
+      this.hideCard(cardAttempts[1].id)
+    } else {
+        if(playerScores[playerSequence] == undefined){
+          playerScores[playerSequence] = 0
+        }
+        ++playerScores[playerSequence];
     }
-    this.generateScores(this.state.cards);
     this.clearPreviousCardAttempts()
   }
 
@@ -108,15 +128,16 @@ class CardsConnected extends Component {
     })
     return !hiddenCards
   }
-
   // function to open the card based on the click from the user.
 
   showCard(id) {
-    const cardIndex = this.getCardIndex(id)
+    const cardIndex = this.getCardIndex(id);
     const cards = [...this.state.cards]
     cards[cardIndex].show = true;
+    const clickNumber = (this.state.clickNumber + 1);
     this.setState({
-      cards
+      cards,
+      clickNumber,
     });
   }
 
@@ -135,7 +156,7 @@ class CardsConnected extends Component {
     saveGame(this.state)
   }
 
-  // function call when the game is completed.
+  // function which ends the game.
 
   endGame() {
     setTimeout(
@@ -147,9 +168,12 @@ class CardsConnected extends Component {
     )
   }
 
-  // function to click the card
+  /* function to handle the card clicks */
 
   handleCardClick(cardId, cardName) {
+    this.setState({
+      playerSequence: this.generatePlayerSequence(),
+    })
     this.showCard(cardId);
     this.addCardAttempt(cardId, cardName)
     if (this.state.cardAttemptsCount === 3) {
@@ -161,34 +185,30 @@ class CardsConnected extends Component {
     this.saveGameState();
   }
 
-  // function to generate the scores 
-  generateScores(cards){
-    var cardsOpened = this.getNumberofCardsOpened(cards,"show");
+/* function which generates the player sequence considering,
+   the number chances, current Click of the User,
+    and the selected players for the game */
+
+  generatePlayerSequence () {
+  const {selectedPlayers, chances, clickNumber } = this.state;
+  var playerSequence = Math.floor((clickNumber % ( selectedPlayers * chances)) / chances);
+  this.setState ({
+    playerSequence: playerSequence
+  })
+  return playerSequence;
   }
-
-  // Function to generate the current score based on the number of cards revealed.
-
-  getNumberofCardsOpened(input, field) { 
-    var output = [];
-    for (var i=0; i < input.length ; ++i)
-         if(input[i][field] === true){
-        output.push(input[i][field]);
-         }
-    this.setState({
-      currentScore : Math.floor(output.length / 2)
-    })
-    console.log('>>>>>>>>>>>CurrentScore>>>>>>>>>>>>>>', this.state.currentScore);
-}
 
 // render function which shows the main layout of the cards  
 
 render() {
-    return this.state.gameFinished
+  const {gameFinished, playerSequence, playerScores, cards } = this.state;
+    return gameFinished
       ? <Redirect to="/end-game" />
       :
       <Cards
-          cards={this.state.cards}
-          currentScore={this.state.currentScore}
+          cards={cards}
+          currentScore={playerScores}
+          playerSequence={playerSequence}
           onClick={this.handleCardClick}
       />
   }
