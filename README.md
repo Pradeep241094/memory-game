@@ -1,4 +1,4 @@
-# React memory game
+# Memory game
 
 A simple memory game created in React.js. 
 
