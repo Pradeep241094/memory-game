@@ -256,6 +256,7 @@ class CardsConnected extends Component {
       />
     );
   }
+
   componentWillUnmount() {
     this.endTimer();
   }
