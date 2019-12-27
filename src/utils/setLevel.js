@@ -30,7 +30,7 @@ const getLevelCards = (level) => {
 }
 
 // function to save the level based on the user input (easy, medium, hard) 
-const setLevel = (level) => {
+const setLevel = (level) => {    
   saveSettings({
     level
   })

@@ -7,7 +7,6 @@ const HeaderStyled = styled(Header)`
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   padding: 0 20px;
   background-color: #1B2632;
   display: flex;
@@ -24,7 +23,6 @@ const HeaderStyled = styled(Header)`
   
   .Header__logoImage {
     width: 50px;
-    margin-right: 20px;
   }
   
   .backToMenuLink {

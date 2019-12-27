@@ -1,24 +1,24 @@
 import React from 'react'
 
 const EndGame = ({ className }) => {
-  const wonImage = require('./images/you-won.svg')
+  const victoryImage = require('./images/gify.gif')
 
   return (
     <div className={className}>
       <img
-        src={wonImage}
+        src={victoryImage}
         alt="You won"
         className="youWonImage"
       />
 
-      <p className="youWonText">
+      <h4 className="youWonText">
         Congratulations!<br />You won!
-      </p>
+      </h4>
 
       <br />
 
       <a href="/new-game" className="newGameLink">
-        Play again
+      <h4>Play again</h4>
       </a>
     </div>
   )
