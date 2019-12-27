@@ -1,6 +1,6 @@
 # Memory game
 
-A simple memory game created in React.js. 
+A simple memory game created using React.js). 
 
 ## Game rules
 
