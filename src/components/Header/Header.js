@@ -35,10 +35,10 @@ const Header = ({ className, currentScore, playerSequence, timer, selectedPlayer
     }
     </div>
     <NavLink to="/menu" className="backToMenuLink">
-      Back to main menu
+      <h4>Main menu</h4>
     </NavLink>
     <NavLink to="/new-game" onClick={() => resetGame()} className="backToMenuLink">
-      Reset Game
+     <h4>Reset Game</h4>
     </NavLink>
   </header>
 )

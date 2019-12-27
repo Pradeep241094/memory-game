@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" id="svg2" viewBox="0 0 515.35 212.17" version="1.1">
+ <g id="layer1" transform="translate(-153.38 -338.96)">
+  <g id="g3198" stroke="#000" transform="translate(6.0603 -112.26)">
+   <path id="path3302" stroke-width="1px" fill="#f00" d="m169.79 539.55 76.691-20.392 39.011-47.877 113.7-0.48186 43.673 23.534 1.7439 36.794 158.29 0.4433 40.784 23.938-0.6701 53.64-34.351 1.3299-32.361-22.608-8.8661-1.3299-14.629 3.5464-15.959 11.083-8.4228 8.4228h-203.03l-9.7527-8.4228-12.412-8.4228-11.526-6.2062h-11.526l-10.196 4.433-19.062 12.856-4.433 5.3196-37.681 0.44331-40.784-23.052 1.7732-46.99z"/>
+   <g id="g4637">
+    <path id="path2905" fill-rule="evenodd" fill="#1a1a1a" transform="matrix(2.5859 0 0 2.5575 -241.31 -865.11)" d="m213.16 578.92c0 5.134-4.1619 9.2959-9.2959 9.2959s-9.2959-4.1619-9.2959-9.2959 4.1619-9.2959 9.2959-9.2959 9.2959 4.1619 9.2959 9.2959z"/>
+    <path id="path2903" fill-rule="evenodd" transform="matrix(2.5859 0 0 2.5575 -236.14 -859.99)" d="m213.16 578.92c0 5.134-4.1619 9.2959-9.2959 9.2959s-9.2959-4.1619-9.2959-9.2959 4.1619-9.2959 9.2959-9.2959 9.2959 4.1619 9.2959 9.2959z"/>
+    <path id="path2913" stroke-width="2.5717px" fill="#999" d="m266.7 622.12-4.8626-3.1741"/>
+    <path id="path2915" stroke-width="2.5717px" fill="#999" d="m266.7 617.01-4.8626-3.1741"/>
+    <path id="path2930" stroke-width="2.5717px" fill="#999" d="m268.17 612.74-4.8626-3.1741"/>
+    <path id="path2932" stroke-width="2.5717px" fill="#999" d="m269.55 608.68-4.8626-3.1741"/>
+    <path id="path2934" stroke-width="2.5717px" fill="#999" d="m271.59 605.2-4.8626-3.1741"/>
+    <path id="path2936" stroke-width="2.5405px" fill="#999" d="m274.33 602.14-4.6994-3.2052"/>
+    <path id="path2938" stroke-width="2.8109px" fill="#999" d="m278.28 599.68-5.1084-3.6096"/>
+    <path id="path2940" stroke-width="3.233px" fill="#999" d="m283.46 597.74-5.8755-4.1516"/>
+    <path id="path2952" stroke-width="3.7643px" fill="#999" d="m289.73 596.79-6.2892-5.2583"/>
+    <path id="path2968" fill-rule="evenodd" fill="#ff0" transform="matrix(2.5859 0 0 2.5575 -227.05 -872.3)" d="m205.38 583.49c0 2.721-2.2058 4.9268-4.9267 4.9268-2.721 0-4.9267-2.2058-4.9267-4.9268s2.2058-4.9267 4.9267-4.9267c2.721 0 4.9267 2.2058 4.9267 4.9267z"/>
+    <path id="path2970" d="m181.65 581.09-2.2998-0.20181-1.47 1.7801-0.51874-2.2496-2.1472-0.848 1.9792-1.1885 0.14296-2.3042 1.742 1.5151 2.2356-0.57607-0.90261 2.1249z" transform="matrix(2.5859 0 0 2.5575 -170.55 -861.72)" fill="#ff0" fill-rule="evenodd"/>
+   </g>
+   <g id="g3684" stroke-linejoin="round" transform="translate(0,112)" fill-rule="evenodd">
+    <path id="path3660" transform="matrix(.96888 0 0 1.37 5.3724 -162.91)" fill="#333" d="m189.25 446.91c0 4.4624-3.6175 8.0799-8.0799 8.0799s-8.0799-3.6175-8.0799-8.0799 3.6175-8.0799 8.0799-8.0799 8.0799 3.6175 8.0799 8.0799z"/>
+    <path id="path3668" transform="matrix(.96888 0 0 1.37 3.3724 -160.91)" fill="#ff0" d="m189.25 446.91c0 4.4624-3.6175 8.0799-8.0799 8.0799s-8.0799-3.6175-8.0799-8.0799 3.6175-8.0799 8.0799-8.0799 8.0799 3.6175 8.0799 8.0799z"/>
+   </g>
+   <g id="g3694" stroke-linejoin="round" transform="translate(16,120)" fill-rule="evenodd">
+    <path id="path3696" transform="matrix(.96888 0 0 1.37 5.3724 -162.91)" fill="#333" d="m189.25 446.91c0 4.4624-3.6175 8.0799-8.0799 8.0799s-8.0799-3.6175-8.0799-8.0799 3.6175-8.0799 8.0799-8.0799 8.0799 3.6175 8.0799 8.0799z"/>
+    <path id="path3698" transform="matrix(.96888 0 0 1.37 3.3724 -160.91)" fill="#ff0" d="m189.25 446.91c0 4.4624-3.6175 8.0799-8.0799 8.0799s-8.0799-3.6175-8.0799-8.0799 3.6175-8.0799 8.0799-8.0799 8.0799 3.6175 8.0799 8.0799z"/>
+   </g>
+   <path id="path2842" stroke-width="2.5717px" fill="none" d="m643.05 609.16v-55.541"/>
+   <path id="path2844" stroke-width="2.5717px" fill="none" d="m603.37 530.96v24.85"/>
+   <path id="path2830" stroke-width="2.5717px" fill="none" d="m286.1 541.26v45.311"/>
+   <path id="path2828" stroke-width="2.5717px" fill-rule="evenodd" fill="#fff" d="m286.1 541.26h157.05"/>
+   <path id="path2818" stroke-width="2.5717px" fill="none" d="m644.95 609.23h-37.976s-24.404-22.655-39.675-22.655-39.675 22.655-39.675 22.655h-201.85s-24.404-22.655-39.675-22.655-39.675 22.655-39.675 22.655h-37.976v-50.161l-39.675-18.265v45.771l39.675 22.655"/>
+   <path id="path2824" stroke-width="2.5717px" fill-rule="evenodd" fill="#fff" d="m444.12 539.07v70.161"/>
+   <path id="path2832" stroke-width="2.5717px" fill-rule="evenodd" fill="#fff" d="m365.13 540.49 0.32186 70.207"/>
+   <path id="path2834" stroke-width="2.5717px" fill="none" d="m355.11 551.49h4.4388"/>
+   <path id="path2836" stroke-width="2.5717px" fill="none" d="m432.68 551.49h4.4388"/>
+   <path id="path2838" stroke-width="2.5717px" fill="none" d="m444.8 556.61h198.38"/>
+   <path id="path2840" stroke-width="2.5717px" fill="none" d="m444.8 531.03h157l41.374 23.626"/>
+   <g id="g4613" stroke-width="2.5717" fill="#7f2aff" fill-rule="evenodd">
+    <path id="path2874" d="m417.72 495.09 46.25 36.25h16.469v-1.4375l-44.094-34.562-18.625-0.25z"/>
+    <path id="rect2851" d="m442.47 494.25v13.347l62.87 49.312h16.485v-1.4386l-78.142-61.221h-1.2121z"/>
+   </g>
+   <path id="path2897" stroke-width="2.5717px" fill="none" d="m285.75 471.38 39.691 22.116"/>
+   <path id="path4556" stroke-width="2.572" fill="none" d="m245.13 517.59-76.485 21.942 40.75 19.435 75.858-18.181-40.123-23.196z"/>
+   <path id="path3782" stroke-width="2.572" fill="#1a1a1a" d="m285.13 470.58-39.496 47.019 39.496 23.196 38.954-47.884-38.954-22.332z"/>
+   <path id="path4558" stroke-width="2.572" fill="#1a1a1a" d="m324.12 493.53-39.259 48.63h81.5l0.11922-47.139-42.36-1.491z"/>
+   <path id="path4617" stroke-width="2.572" fill="#1a1a1a" d="m365.5 494.4v47.766h78.366v-47.139l-78.366-0.62692z"/>
+   <g id="g4652" transform="translate(282)">
+    <path id="path4654" fill-rule="evenodd" fill="#1a1a1a" transform="matrix(2.5859 0 0 2.5575 -241.31 -865.11)" d="m213.16 578.92c0 5.134-4.1619 9.2959-9.2959 9.2959s-9.2959-4.1619-9.2959-9.2959 4.1619-9.2959 9.2959-9.2959 9.2959 4.1619 9.2959 9.2959z"/>
+    <path id="path4656" fill-rule="evenodd" transform="matrix(2.5859 0 0 2.5575 -236.14 -859.99)" d="m213.16 578.92c0 5.134-4.1619 9.2959-9.2959 9.2959s-9.2959-4.1619-9.2959-9.2959 4.1619-9.2959 9.2959-9.2959 9.2959 4.1619 9.2959 9.2959z"/>
+    <path id="path4658" stroke-width="2.5717px" fill="#999" d="m266.7 622.12-4.8626-3.1741"/>
+    <path id="path4660" stroke-width="2.5717px" fill="#999" d="m266.7 617.01-4.8626-3.1741"/>
+    <path id="path4662" stroke-width="2.5717px" fill="#999" d="m268.17 612.74-4.8626-3.1741"/>
+    <path id="path4664" stroke-width="2.5717px" fill="#999" d="m269.55 608.68-4.8626-3.1741"/>
+    <path id="path4666" stroke-width="2.5717px" fill="#999" d="m271.59 605.2-4.8626-3.1741"/>
+    <path id="path4668" stroke-width="2.5405px" fill="#999" d="m274.33 602.14-4.6994-3.2052"/>
+    <path id="path4670" stroke-width="2.8109px" fill="#999" d="m278.28 599.68-5.1084-3.6096"/>
+    <path id="path4672" stroke-width="3.233px" fill="#999" d="m283.46 597.74-5.8755-4.1516"/>
+    <path id="path4674" stroke-width="3.7643px" fill="#999" d="m289.73 596.79-6.2892-5.2583"/>
+    <path id="path4676" fill-rule="evenodd" fill="#ff0" transform="matrix(2.5859 0 0 2.5575 -227.05 -872.3)" d="m205.38 583.49c0 2.721-2.2058 4.9268-4.9267 4.9268-2.721 0-4.9267-2.2058-4.9267-4.9268s2.2058-4.9267 4.9267-4.9267c2.721 0 4.9267 2.2058 4.9267 4.9267z"/>
+    <path id="path4678" fill-rule="evenodd" fill="#ff0" transform="matrix(2.5859 0 0 2.5575 -170.55 -861.72)" d="m181.65 581.09-2.2998-0.20181-1.47 1.7801-0.51874-2.2496-2.1472-0.848 1.9792-1.1885 0.14296-2.3042 1.742 1.5151 2.2356-0.57607-0.90261 2.1249z"/>
+   </g>
+   <path id="path3032" stroke-width="2.572" fill="none" d="m286.48 470.83h112.64l44.823 23.776h-118.49l-38.976-23.776z"/>
+  </g>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+    <dc:publisher>
+     <cc:Agent rdf:about="http://openclipart.org/">
+      <dc:title>Openclipart</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+</svg>
