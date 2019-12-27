@@ -1,7 +1,7 @@
 import store from 'store';
 import { get } from 'lodash';
 
-const appName = 'memoryGame';
+export const appName = 'memoryGame';
 
 const setup = () => {
   if (!store.get(appName)) {
@@ -19,6 +19,11 @@ const saveGame = (state) => {
   store.set(appName, newState)
 } // function to update the store with the newState elements.
 
+const resetGame = () => {
+  // console.log('>>>>>>>>>>>>>>>>>resetFunctionCalled>>>>>>...')
+  window.localStorage.clear()
+};
+
 const loadGame = () => {
   setup()
   return store.get(appName).state
@@ -31,14 +36,18 @@ const clearGame = () => {
   store.set(appName, newState)
 } // function to reset the game
 
-const saveSettings = (settings) => {
+const saveSettings = (settings) => {  //{ playerSize : 1 }
+  // console.log('Prev State: ', window.localStorage);
   setup()
-  const currentSettings = store.get(appName)
-  const newSettings = {...currentSettings, settings}
-  store.set(appName, newSettings)
+  const currentSettings = store.get(appName);
+  currentSettings.settings = { ...currentSettings.settings, ...settings  };
+  const newSettings = Object.assign({}, currentSettings);  //{...currentSettings, settings}
+  store.set(appName, newSettings);
+  // console.log('Next State: ', window.localStorage);
 }
 
 const loadSettings = (value) => {
+  // console.log('Current State: ', window.localStorage);
   setup()
   const storedSettings = store.get(appName).settings;
   return value
@@ -51,5 +60,6 @@ export {
   loadGame,
   loadSettings,
   saveGame,
-  saveSettings
+  saveSettings,
+  resetGame
 }

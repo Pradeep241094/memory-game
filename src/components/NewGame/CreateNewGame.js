@@ -13,18 +13,18 @@ class CreateNewGame extends Component {
     this.state = {
       redirectToGame: false,
     }
-    this.handleLevelSelect = this.handleLevelSelect.bind(this);
-    this.setNumberOfPlayers = this.setNumberOfPlayers.bind(this);
+    // this.handleLevelSelect = this.handleLevelSelect.bind(this);
+    // this.setNumberOfPlayers = this.setNumberOfPlayers.bind(this);
   }
 
   // handle the difficulty level based on the user selection.
   
-  handleLevelSelect(level) {
+  handleLevelSelect = (level) => {
     clearGame();
     setLevel(level);
   }
 
-  setNumberOfPlayers(players) {
+  setNumberOfPlayers = (players) => {
     setPlayers(players);
     this.setState({
       redirectToGame: true,

@@ -7,10 +7,9 @@ const MainMenuStyled = styled(MainMenu)`
   width: 100%;
   text-align: center;
   background-image: linear-gradient(to bottom, #1B2632, #B2DCEF);
-  line-height: 2;
   
   a {
-    color: ${colors.red};
+    color: ${colors.white};
     font-size: 60px;
     text-decoration: none;
   }

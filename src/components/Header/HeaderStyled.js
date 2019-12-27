@@ -23,7 +23,6 @@ const HeaderStyled = styled(Header)`
   
   .Header__logoImage {
     width: 50px;
-    margin-right: 20px;
   }
   
   .backToMenuLink {
